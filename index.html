@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>VirtuBank</title>
+</head>
+<body>
+    <header class="header">  <!-- Inicio Header-->
+        <nav class="navbar">
+            <picture class="navbar__logo">
+            <a href="index.html">
+                <img src="img/Logo/Logo-Daniel-Piña-Frontend-Developer.png" alt="logo Daniel Piña Frontend">
+            </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#INSTITUCIONAL" data-ancla="INSTITUCIONAL">INSTITUCIONAL</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#CONTACT" data-ancla="CONTACT">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+<!--------------Nav hamburguesa-------------->
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" class="close">&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a href="#INSTITUCIONAL" data-ancla="INSTITUCIONAL">INSTITUCIONAL</a>
+<!---->                <a href="#CONTACT" data-ancla="CONTACT">CONTACT</a>
+<!---->            </div>
+<!---->        </div>
+    </header>
+<!-----------Contenido------------->
+    <main id="homeid" class="container">
+        <div id="heropub" class="hero">
+            <section id="loguin" class="loguin">
+            </section>
+        </div>
+    </main>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

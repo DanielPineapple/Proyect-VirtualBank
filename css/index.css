@@ -220,7 +220,7 @@ header {
     .hero {
         width: auto;
         padding: 100px;
-        overflow-x: visible;
+        overflow:hidden;
     }
 }
 
@@ -228,12 +228,14 @@ header {
     .loguin__cont {
         width: auto;
         justify-content: start;
-
+        height: auto;
     }
 
     .hero {
         width: auto;
         padding: auto;
+        overflow: hidden;
+        height: auto;
     }
 }
 

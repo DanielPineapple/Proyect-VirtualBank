@@ -7,7 +7,7 @@
     --primary-300: rgb(255, 51, 51, 0.3);
     
     --secondary-solid: #1DB4B5;
-    --secondary-900: rgb(37, 115, 135);
+    --secondary-900: rgb(21, 100, 131);
     --secondary-500: rgb(29, 180, 181, 0.5);
     --secondary-300: rgb(29, 180, 181, 0.3);
     
@@ -182,7 +182,8 @@ header {
 .button__text {
     display: inline-block;
     font-size: 12px;
-    background-color: var(--light-bg-solid);
+    background-color: var(--light-font-solid);
+    border: black solid 1px;
     padding: 3px 20px;
     border-radius: 50px;
     font-weight: 700;
@@ -208,6 +209,74 @@ header {
     font-size: 12px;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .loguin__cont {
+        width: 200px;
+        justify-content: start;
+
+    }
+
+    .hero {
+        width: auto;
+        padding: 100px;
+        overflow-x: visible;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .loguin__cont {
+        width: auto;
+        justify-content: start;
+
+    }
+
+    .hero {
+        width: auto;
+        padding: auto;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1199px) {
+    .loguin__cont {
+        width: auto;
+        justify-content: start;
+        overflow: hidden;
+    }
+
+    .hero {
+        width: auto;
+        padding: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+    .loguin__cont {
+        width: auto;
+        justify-content: start;
+        overflow: hidden;
+    }
+
+    .hero {
+        width: auto;
+        padding: auto;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .loguin__cont {
+        width: auto;
+        justify-content: start;
+        overflow: hidden;
+    }
+
+    .hero {
+        width: auto;
+        padding: auto;
+        height: 1800px;
+    }
+}
+
 
 .footer {
     background: linear-gradient(to right, rgb(16, 96, 128) , rgba(18, 112, 149, 0.311), rgba(34, 132, 197, 0.472));

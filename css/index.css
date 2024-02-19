@@ -1,53 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
-
+@import url(https://fonts.googleapis.com/css2?family=REM:wght@100;200;400;500;600;700;800&display=swap);
 :root {
-/* Palette*/
---primary-solid: #86ac41;
---primary-900: #34675c;
---primary-500: rgba(68, 255, 51, 0.5);
---primary-300: rgba(61, 255, 51, 0.3);
-
---secondary-solid: #324851;
---secondary-900: rgba(29, 72, 181, 0.9);
---secondary-500: rgba(29, 54, 181, 0.5);
---secondary-300: rgba(29, 39, 181, 0.3);
-
---dark-solid: #1F1F1F;
---dark-900: rgb(31, 31, 31, 0.9);
---dark-500: rgb(31, 31, 31, 0.5);
---dark-300: rgb(31, 31, 31, 0.3);
-
---dark-bg-solid: #30343F;
---light-bg-mist: #7da3a1;
---light-bg-solid: #FAFAFF;
---light-font-solid: #FFFFFF;
-
-/* Typography */
---base-font: 'Inter', sans-serif;
---alternative-font: 'raleway', sans-serif;
-
-/* font-sizes */
---font-display: 4.6em;
---font-jumbo: 3.8em;
---font-xlarge: 3em;
---font-large: 2.4em;
---font-medium: 1.8em;
---font-small: 1.6em; 
---font-xsmall: 1.4em;
-
-/* sapacings */
---spacing-128: 12.8rem;
---spacing-68: 6.8rem;
---spacing-36: 3.6rem;
---spacing-28: 2.8rem;
---spacing-24: 2.4rem;
---spacing-20: 2rem;
---spacing-16: 1.6rem;
---spacing-12: 1.2rem;
---sapacing-8: 0.8rem;
-
-
-}
+    /* Palette*/
+    --primary-solid: #ff3333;
+    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-500: rgb(255, 51, 51, 0.5);
+    --primary-300: rgb(255, 51, 51, 0.3);
+    
+    --secondary-solid: #1DB4B5;
+    --secondary-900: rgb(37, 115, 135);
+    --secondary-500: rgb(29, 180, 181, 0.5);
+    --secondary-300: rgb(29, 180, 181, 0.3);
+    
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+    
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+    
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'raleway', sans-serif;
+    
+    /* font-sizes */
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em; 
+    --font-xsmall: 1.4em;
+    
+    /* sapacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --sapacing-8: 0.8rem;
+    
+    
+    }
+    
 
 *,
 *::before
@@ -61,7 +60,6 @@ html {
     font-family: var(--base-font);
     font-size: 62.5%;
     color: var(--dark-solid);
-    background-color: var(--primary-900);
 }
 
 a {
@@ -97,9 +95,9 @@ width: 100%;
 /*---------header---------*/
 
 header {
-    background: linear-gradient(to right, rgb(50, 72, 81) , rgba(50, 72, 81, 0.311), rgba(0, 0, 0, 0));
-    padding: var(--spacing-12);
-    border-radius: 50PX;
+    background: linear-gradient(to right, rgb(16, 96, 128) , rgba(18, 112, 149, 0.311), rgba(34, 132, 197, 0.472));
+    padding: 1px;
+    width: 100%;
 }
 
     .navbar {
@@ -114,10 +112,10 @@ header {
     }
     
     .navbar__logo img {
-        height: 70px;
-        max-width: 70px;
+        height: 100px;
+        max-width: 100px;
         transition: all 0.3s;
-    }
+}
     
     .navbar__logo img:hover{
         transform: scale(1.1);
@@ -140,4 +138,88 @@ header {
 .navbar__link:hover {
     background-color: var(--secondary-solid);
     border-radius: 50px;
+}
+/*   hero   */
+.hero {
+    background-image: url(../img/banner-hero.png);
+    padding: 25rem;
+    background-position: top;
+    background-size: cover;
+    background-attachment:local;
+    position: relative; 
+    width: 1200px;
+    margin: auto;
+}
+
+.hero::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.435);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px) brightness(.9);
+}
+
+.loguin {
+    display: flex;
+    justify-content:center;
+    align-items:end;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    z-index: 2;
+    position: relative;
+}
+
+.loguin__text {
+    color: var(--light-font-solid);
+    font-size: 35px;
+    padding: 3px;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.button__text {
+    display: inline-block;
+    font-size: 12px;
+    background-color: var(--light-bg-solid);
+    padding: 3px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+
+.button__text:hover {
+    background-color: var(--secondary-900);
+    color: var(--light-font-solid);
+}
+
+
+.intro__usu {
+    background-color: var(--light-font-solid);
+    padding-left: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.intro__pass {
+    background-color: var(--light-font-solid);
+    padding-left: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.footer {
+    background: linear-gradient(to right, rgb(16, 96, 128) , rgba(18, 112, 149, 0.311), rgba(34, 132, 197, 0.472));
+    padding: var(--spacing-68);
+}
+
+.footer__copy {
+    margin-top: var(--spacing-36);
+    text-align: center;
+}
+
+.foot__logo {
+    width: 150px;
+    height: 150px;
 }
